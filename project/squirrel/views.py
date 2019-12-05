@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from squirrel.models import squirrel
+from .models import squirrel
 from django.http import HttpResponse
+
 
 def map(request):
     alldata = squirrel.objects.all()
