@@ -31,7 +31,7 @@ def update(request,unique_squirrel_id):
     }
     return render(request, 'squirrel/update.html',context)
 
-def add(request,unique_squirrel_id):
+def add(request):
     if request.method == 'POST':
         #check form data
         form = SquirrelForm(request.POST)
